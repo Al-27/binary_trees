@@ -23,7 +23,7 @@ void binary_tree_delete(binary_tree_t *tree)
 */
 void nestedFree(void *pointer)
 {
-    if(pointer)
+    if(pointer != NULL)
     {
         nestedFree(pointer);
         free(pointer);
